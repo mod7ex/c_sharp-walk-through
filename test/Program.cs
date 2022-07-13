@@ -209,9 +209,93 @@
 
             Console.WriteLine("Thanks for playing!");
 
-            */
 
-            // ---------------------------------- Rock-Paper-Scissors ----------------------------------
+            // ---------------------------------- Arrays ----------------------------------
+            
+            // Fixed size
+            // string[] cars = { "BMW", "Mustang", "Mercides" };
+            // or
+            string[] cars = new string[3];
+            cars[0] = "BMW";
+            cars[1] = "Mustang";
+            cars[2] = "Mercides";
+
+            Random car_rand = new Random();
+            Console.WriteLine(cars[car_rand.Next(0, cars.Length)]);
+            cars[car_rand.Next(0, cars.Length)] = "Mourad Car";
+
+            for(int i=0; i<cars.Length; i++)
+            {
+                Console.WriteLine(cars[i]);
+            }
+
+            Console.WriteLine("Using foreach!");
+
+            foreach(string car in cars)
+            {
+                Console.WriteLine("foreach ==> " + car);
+            }
+
+            sayHappyBirthday("Mourad", 24);
+
+            // ---------------------------------- params keyword ----------------------------------
+
+            double sum = checkOut(1, 1.2, 2.365, 2, 55);
+
+
+            // ---------------------------------- Try Catch ----------------------------------
+
+            Console.WriteLine("Enter a dvider to get 1/x : ");
+
+            int devider = Convert.ToInt32(Console.ReadLine());
+            double result;
+
+            try
+            {
+                result = 1/devider; // devider might be a string --> Exception
+                Console.WriteLine("the fraction 1/" + devider + " is: " + result);
+            }
+            catch (System.DivideByZeroException e)
+            {
+                Console.WriteLine("You can't devide by 0 Ediot!");
+            }
+            catch (System.FormatException e)
+            {
+                Console.WriteLine("Enter a valid number different than 0");
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+            finally
+            {
+                Console.WriteLine("Finally either code worked or not we're here");
+            }
+
+            */
         }
+
+        private static void sayHappyBirthday(string name, int age)
+        {
+            Console.WriteLine("Happy birth day to you!");
+            Console.WriteLine("Happy birth day to you!");
+            Console.WriteLine("Happy birth day dear " + name);
+            Console.WriteLine("Happy birth day to you!");
+            Console.WriteLine("You're " + age + " years old");
+            Console.WriteLine();
+        }
+
+        
+        private static double checkOut(params double[] arr)
+        {
+            double sum = 0;
+            foreach(double item in arr)
+            {
+                sum += item;
+            }
+
+            return sum;
+        }
+
     }
 }
