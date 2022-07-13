@@ -14,6 +14,9 @@
 
             // Console.ReadKey();
 
+            */
+            
+            /*
             // ---------------------------------- Variables & Data types ----------------------------------
 
             Console.WriteLine("");
@@ -52,6 +55,9 @@
             Console.WriteLine(name);
             Console.WriteLine("A string " + name);
 
+            */
+            
+            /*
             // ---------------------------------- Constats ----------------------------------
 
             Console.WriteLine("");
@@ -60,6 +66,9 @@
             Console.WriteLine(surname);
             Console.WriteLine("A string " + surname);
 
+            */
+            
+            /*
             // ---------------------------------- Type casting ----------------------------------
 
             Console.WriteLine("");
@@ -78,6 +87,9 @@
             Console.WriteLine("String to single character; " + Convert.ToChar(someStr));
             Console.WriteLine("String to boolean; " + Convert.ToBoolean("false")); // only "true" & "false" can be converted to boolean
 
+            */
+            
+            /*
             // ---------------------------------- User input ----------------------------------
 
             Console.WriteLine("What is your name ? ");
@@ -92,6 +104,9 @@
             Console.Write("Hello " + user_name);
             Console.WriteLine(", you're " + user_age);
 
+            */
+            
+            /*
             // ---------------------------------- Math stuff ----------------------------------
 
             Console.WriteLine(Math.Pow(4, 2)); // 16
@@ -119,6 +134,9 @@
             double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
             Console.WriteLine("The hypotenus is: " + c);
 
+            */
+            
+            /*
             // ---------------------------------- String methods ----------------------------------
             string my_full_name = "Mourad ELCADI";
             string my_phone_number = "123-456-7890";
@@ -136,6 +154,9 @@
             Console.WriteLine("my first name " + my_first_name);
             Console.WriteLine("my last name " + my_last_name);
 
+            */
+            
+            /*
             // ---------------------------------- If statements ----------------------------------
             Random my_ran = new Random();
             
@@ -148,6 +169,9 @@
                 Console.WriteLine("You got a number less or equale to 5");
             }
 
+            */
+            
+            /*
             // ---------------------------------- Rock-Paper-Scissors ----------------------------------
 
             Random randy = new Random();
@@ -209,7 +233,9 @@
 
             Console.WriteLine("Thanks for playing!");
 
-
+            */
+            
+            /*
             // ---------------------------------- Arrays ----------------------------------
             
             // Fixed size
@@ -238,11 +264,16 @@
 
             sayHappyBirthday("Mourad", 24);
 
+            */
+            
+            /*
             // ---------------------------------- params keyword ----------------------------------
 
             double sum = checkOut(1, 1.2, 2.365, 2, 55);
 
-
+            */
+            
+            /*
             // ---------------------------------- Try Catch ----------------------------------
 
             Console.WriteLine("Enter a dvider to get 1/x : ");
@@ -273,6 +304,22 @@
             }
 
             */
+
+            /*
+            // ---------------------------------- Conditional operator (Ternary operator) ----------------------------------
+            Random my_random = new Random();
+            Console.WriteLine((my_random.Next(1, 9)%2 == 0) ? "Even" : "Odd");
+
+
+            // ---------------------------------- String interpolation ----------------------------------
+            string name = "Mourad";
+            int age = 24;
+
+            Console.WriteLine($"Hello {name} you're {age}");
+            Console.WriteLine($"Hello {name, 10} you're {age, -10}");
+            */
+    
+            // 2.25
         }
 
         private static void sayHappyBirthday(string name, int age)
